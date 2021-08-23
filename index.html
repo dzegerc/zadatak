@@ -1,61 +1,50 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>Slider</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <script 
-        src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous">
-    </script>  
-    <script type="text/javascript">
-        $(document).ready(function() {
-            $('.rg').click(function() {
-                $('.top, .bottom').animate({
-                    'marginLeft' : "+=180px"
-                });
-            });
-            $('.lf').click(function() {
-                $(' .top, .bottom').animate({
-                    'marginLeft' : "-=180px"
-                });
-            });
-        
-        });
-    </script>
-<body>
-    <div class="wrapOne">
-        <div class="top">
-            <div><img class="picture_one" src="assets/slider-image-1.jpg" ></div>
-            <div><img class="picture_two" src="assets/slider-image-7.jpg" ></div>
-            <div><img class="picture_three" src="assets/slider-image-6.jpg" ></div>
-            <div><img class="picture_four" src="assets/slider-image-9.jpg" ></div>
-            <div><img class="picture_five" src="assets/slider-image-8.jpg" ></div>
-            <div><img class="picture_six" src="assets/slider-image-5.jpg" ></div>
-        </div>
-    </div>
-    <div class="wrapTwo">
-        <div class="bottom">
-            <div><img class="picture_seven" src="assets/slider-image-9.jpg" ></div>
-            <div><img class="picture_eight" src="assets/slider-image-4.jpg" ></div>
-            <div><img class="picture_nine" src="assets/slider-image-1.jpg" ></div>
-            <div><img class="picture_ten" src="assets/slider-image-2.jpg" ></div>
-            <div><img class="picture_eleven" src="assets/slider-image-3.jpg" ></div>
-        </div>
-    </div>
-    <div class="arrows">
-        <div class="right">
-            <img class="lf" src="assets/arrow-gray-right.png" width="9.98" height="16" >
-        </div>
-        <div class="left">
-            <img  class="rg" src="assets/arrow-gray-right.png" width="9.98" height="16" >
-        </div>
-    </div>
-    <div class="container">
-        <div class="container_title">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-        </div>
-        <div class="container_description">
-            <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
-        </div>
-</body>       
-</html>
+    <html>
+        <head>
+            <meta charset="UTF-8">
+            <link rel="stylesheet" href="style.css">
+            <title>Slider</title>
+        </head>
+        <body>
+            <header>
+                <p>Skup drugih elemenata na stranici</p>
+            </header>
+            <div class="container">
+                <div class="wrapper">
+                    <div class="top">
+                        <img class="picture" src="./Assets/slider-image-1.jpg" >
+                        <img class="picture" src="./Assets/slider-image-7.jpg" >
+                        <img class="picture" src="./Assets/slider-image-6.jpg" >
+                        <img class="picture" src="./Assets/slider-image-9.jpg" >
+                        <img class="picture" src="./Assets/slider-image-8.jpg" >
+                        <img class="picture" src="./Assets/slider-image-5.jpg" >
+                    </div>
+                <div class="wrap-bot">
+                    <div class="bottom">
+                        <img class="picture" src="./Assets/slider-image-9.jpg" >
+                        <img class="picture" src="./Assets/slider-image-4.jpg" >
+                        <img class="picture" src="./Assets/slider-image-1.jpg" >
+                        <img class="picture" src="./Assets/slider-image-2.jpg" >
+                        <img class="picture" src="./Assets/slider-image-3.jpg" >
+                    </div>
+                    <div class="buttons">
+                        <button class="button-left"><img  src="./Assets/arrow-gray-left.png"  width="9.98" height="16"></button>
+                        <button class="button-right"><img src="./Assets/arrow-gray-right.png" width="9.98" height="16"></button>
+                    </div>
+                </div>
+            </div>
+                <div class="description">
+                    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h1>
+                    <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.</p>
+                </div>
+                <footer>
+                    <p>Skup drugih elemenata na stranici</p>
+                </footer>
+            </div>
+
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script> 
+            <script src="./main.js"></script>
+
+        </body>       
+    </html>
