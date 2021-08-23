@@ -1,233 +1,214 @@
-
-.wrapOne {
-    position: absolute;
-    width: 1240px;
-    height: 200px;
-    left: -120px;
-    top: 160px;
-    overflow: hidden;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+html, body {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.top {
-    position: absolute;
-    width: 1240px;
-    height: 200px;
-    left: 0px;
-    top: 0px;
-    
+header {
+  position: relative;
+  width: 941px;
+  height: 100px;
+  margin: 0 auto;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #DDDDDD;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.wrapTwo {
-    position: absolute;
-    width: 1100px ;
-    height: 200px;
-    left: -130px;
-    top: 370px;
-    overflow: hidden;
-    box-sizing: border-box;
+header p {
+  position: absolute;
+  color: #FFFFFF;
 }
 
-.bottom {
-    position: absolute;
-    width: 1080px;
-    height: 200px;
-    left: 0x;
-    top: 0px;
-}
-
-.arrows  {
-    position: absolute;
-    width: 60px;
-    height: 130px;
-    right: 415px;
-    bottom: 250px;
-}
-
-.right {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 0px;
-    top: 0px;
-    
-    border: 1px solid #134880;
-    box-sizing: border-box;
-    border-radius: 5px;
-    transform: matrix(-1, 0, 0, 1, 0, 0);
-}
-
-.right:hover, .left:hover {
-    background-color: #134880;
-}
-
-.rg {
-    margin: 20px 22px 20px 25px;
-    cursor: pointer;
-}
- 
-.lf {
-    margin: 22px 20px 25px 25px ;
-    cursor: pointer;
-}
-
-.left {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    left: 0px;
-    top: 70px;
-
-    border: 1px solid #134880;
-    box-sizing: border-box;
-    border-radius: 5px;
+footer {
+  position: relative;
+  width: 941px;
+  height: 100px;
+  margin: 0 auto;
+  bottom: -600px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #DDDDDD;
+  border-radius: 0px 0px 5px 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FFFFFF;
 }
 
 .container {
-    position: absolute;
-    width: 300px;
-    height: 296px;
-    right: 90px;
-    top: 165px;
+  max-width: 940px;
+  position: relative;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.container_title {
-    position: absolute;
-    width: 300.93px;
-    height: 120px;
-    left: 0px;
-    top: 22px;
-    
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 40px;
-    display: flex;
-    align-items: flex-end;
-    letter-spacing: -0.2px;
-    color: #134880;
+.container .description {
+  position: absolute;
+  top: 35px;
+  width: 300px;
 }
 
-.container_description {
-    position: absolute;
-    width: 300.93px;
-    height: 156px;
-    left: 0px;
-    top: 140px;
-
-    font-family: Source Sans Pro;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 26px;
-
-    display: flex;
-    align-items: center;
-    letter-spacing: -0.2px;
-    color: #484A4C;
+.container .description h1 {
+  top: 0px;
+  font-size: 32px;
+  line-height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  letter-spacing: 0.4px;
+  font-weight: bold;
+  color: #134880;
 }
 
-/*images*/
-.picture_one {
-    position: absolute;
-    width: 230px;
-    height: 200px;
-    top: 0;
-    left: 0;
-    border-radius: 5px;
+.container .description p {
+  position: absolute;
+  font-size: 18px;
+  line-height: 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.4px;
 }
 
-.picture_two {
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    left: 240px;
-    top: 0px;
-    border-radius: 5px;
+.container .wrapper {
+  position: absolute;
+  left: 0px;
+  width: 65%;
+  height: 200px;
+  top: 60px;
 }
 
-.picture_three {
-    position: absolute;
-    width: 120px;
-    height: 200px;
-    left: 430px;
-    top: 0px;
-    border-radius: 5px;
-    
+.container .wrapper .picture {
+  width: auto;
+  height: 200px;
+  margin: 0 5px;
+  border-radius: 10px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
-.picture_four {
-    position: absolute;
-    width: 220px;
-    height: 200px;
-    left: 560px;
-    top: 0px;
-    border-radius: 5px;
+.container .wrapper .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
 }
 
-.picture_five {
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    left: 790px;
-    top: 0px;
-    border-radius: 5px;
+.container .wrapper .wrap-bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
-.picture_six {
-    position: absolute;
-    width: 260px;
-    height: 200px;
-    left: 980px;
-    top: 0px;
-    border-radius: 5px;
+.container .wrapper .wrap-bot .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 4px;
+  overflow: hidden;
+  margin-right: 150px;
+  display: flex;
 }
 
-
-.picture_seven {
-    position: absolute;
-    width: 260px;
-    height: 200px;
-    left: 0px;
-    top: 0px;   
-    border-radius: 5px;
+.container .buttons {
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60px;
+  height: 130px;
+  right: 400px;
+  bottom: 250px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-.picture_eight {
-    position: absolute;
-    width: 220px;
-    height: 200px;
-    left: 270px;
-    top: 0px;
-    border-radius: 5px;
+.container .buttons .button-left {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  border-radius: 5px;
+  border: 1px solid #484A4C;
+  padding: 20px;
+  margin: 0 0 10px;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.picture_nine {
-    position: absolute;
-    width: 260px;
-    height: 200px;
-    left: 500px;
-    top: 0px; 
-    border-radius: 5px;
+.container .buttons .button-left:hover {
+  background-color: #134880;
 }
 
-.picture_ten {
-    position: absolute;
-    width: 120px;
-    height: 200px;
-    left: 770px;
-    top: 0px;
-    border-radius: 5px;
+.container .buttons .button-right {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  left: 0px;
+  top: 0px;
+  border: 1px solid #484A4C;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-transform: matrix(1, 0, 0, -1, 0, 0);
+          transform: matrix(1, 0, 0, -1, 0, 0);
 }
 
-.picture_eleven {
-    position: absolute;
-    width: 180px;
-    height: 200px;
-    left: 900px;
-    top: 0px;
-    border-radius: 5px;
+.container .buttons .button-right:hover {
+  background-color: #134880;
 }
-
-
+/*# sourceMappingURL=style.css.map */
